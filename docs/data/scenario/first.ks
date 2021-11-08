@@ -1,45 +1,88 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="優しいおもちゃ屋さん"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「優しいおもちゃ屋さん」[l][r]
 
-メロスは激怒した。[l][r]
+私の住んでいる町にはおもちゃ屋さんがあるらしい。[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+私はまだ行ったことがないから何処にあるかは知らないの。[l][r]
 
-(中略)[l][r]
+でも、この前同じクラスのれいこちゃんが自慢してたの。[l][r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
+れいこちゃんが、お母さんとお買い物していたら、おもちゃ屋さんにばったり会っておもちゃを貰ったんだって。[l][r]
 
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+どうやらこの町のおもちゃ屋さんはすごく優しいみたい。[l][r]
+
+私も行ってみたいなぁ......[l][r]
+
+(次の日...)[l][r]
+
+「キーンコーンカーンコーン」[l][r]
+一人で帰ろうかしら...[l][r]
+
+[link target=*tag_hitori] →一人で帰る [endlink][r]
+[link target=*tag_reiko] →れいこちゃんを誘ってみようかしら [endlink][r]
 [s]
 
-*tag_sleep
+*tag_hitori
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+[bg storage=hitori.jpg time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+晴れの予報だったのに暗く、冷たい雨が降っている。[l][r]
+横断歩道を渡ろうとしたところで優しそうな太っちょのおじさんが現れた。[l][r]
+おじさん:「今日はお母さんとお買い物？」[l][r]
 
+[link target=*tag_omotyaninaru] →「ううん、学校の帰りだから今一人なの」 [endlink][r]
+[link target=*tag_omotyamorau] →「うん。ここで待ち合わせしてるの。」 [endlink][r]
+[s]
+
+*tag_omotyaninaru
+
+[bg storage=badojisan.jpg time=500]
+
+[cm]
+おじさんがおもちゃをあげる。[l][r]
+こっちにおいで......[r]
+
+こうして私はおもちゃ王国の住人になったのでした。[r]
 【 BAD END 】[l][cm]
+
 
 [jump target=*start]
 
-*tag_run
 
-[bg storage=run.jpg time=500]
+
+*tag_omotyamorau
+
+[bg storage=goodojisan.jpg time=500]
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+おじさんがおもちゃをあげる。[l][r]
+こっちにおいで......[r]
+
+こうして私は両手に一杯のおもちゃを貰って帰りましたとさ。[r]
+【 GOOD END ?】[l][cm]
+
+
+[jump target=*start]
+
+
+
+
+
+*tag_reiko
+
+[bg storage=youko.jpg time=500]
+
+[cm]
+れいこちゃんを誘って帰りに河川敷の公園に行って遊びました。[l][r]
+れいこちゃんとはこれを機に仲良くなることができました。[r]
 
 【 GOOD END 】[l][cm]
 
